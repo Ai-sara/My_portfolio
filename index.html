@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+        
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>AISARA PORTFOLIO</title>
+</head>
+<body>
+ 
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+        <!-- Theme button  -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfile">
+                        <img src="assets/img/photo.png" alt="">
+                    </div>
+                </div>
+                <h2 class="profile__name">Айсара Жексембаева</h2>
+                <h3 class="profile__profession">Frontend разработчик</h3>
+
+                <ul class="profile__social">
+                    <li class="profile__social-item">
+                        <a href="https://www.instagram.com/ai_aisara/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li class="profile__social-item">
+                        <a href="https://www.linkedin.com/in/aisarazhe/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </li>
+                    <li class="profile__social-item">
+                        <a href="https://github.com/Ai-sara" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1</h3>
+                    <p class="profile__info-description">Years of <br> work</p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">+12</h3>
+                    <p class="profile__info-description">Completed <br> projects</p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">6</h3>
+                    <p class="profile__info-description">Satisfied <br> customers</p>
+                </div>
+            </div> -->
+
+            <div class="profile__buttons">
+                <a download="" href="assets/pdf/CV.pdf" class="button">
+                    Резюме <i class="ri-download-line"></i>
+                </a>
+
+                <div class="profile__buttons-small">
+                    <a href="https://api.whatsapp.com/send?phone=87475283982&text=Hello, more information!" target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="https://t.me/ai_aisara" target="_blank" class="button button__small button__gray">
+                        <i class="ri-telegram-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters__content">
+                <button class="filters__button filters-tab-active" data-target="#projects">
+                    Projects
+                </button>
+                <button class="filters__button" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+
+            <div class="filters__sections">
+                <div id="bg"></div>
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card" id="open-modal_1">
+                        <img src="assets/img/project1.jpg" class="projects__img" alt="">
+                        
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Адаптивный веб-сайт</span>
+                                <h3 class="projects__title">Лекарственные средства Герветин</h3>
+                                <a href="https://gervetin.kz/" target="_blank" class="projects__buttons button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card" id="open-modal_2">
+                        <img src="assets/img/project2.jpg" class="projects__img" alt="">
+                        
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Сайт-визитка</span>
+                                <h3 class="projects__title">Дистрибьюторская компания Neo Life</h3>
+                                <a href="https://neolife.kz" target="_blank" class="projects__buttons button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card" id="open-modal_3">
+                        <img src="assets/img/project3.jpg" class="projects__img" alt="">
+                        
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Верстка</span>
+                                <h3 class="projects__title">Главная страница туристического сайта</h3>
+                                <a href="" target="_blank" class="projects__buttons button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    
+
+                    <article class="projects__card" id="open-modal_4">
+                        <img src="assets/img/project4.jpg" class="projects__img" alt="">
+                        
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Сайт компании</span>
+                                <h3 class="projects__title">Фарм компания SPEY</h3>
+                                <a href="" target="_blank" class="projects__buttons button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card" id="open-modal_5">
+                        <img src="assets/img/project5.jpg" class="projects__img" alt="">
+                        
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Верстка</span>
+                                <h3 class="projects__title">Аренда премиальных автомобилей</h3>
+                                <a href="" target="_blank" class="projects__buttons button button__small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="modal">
+                    <div class="modal__container" id="modal-container">
+                        
+                        <article class="modal__content" id="modal__content_1">
+                            <div class="modal__close close-modal" title="Close">
+                                <i class="ri-close-fill"></i>
+                            </div>
+        
+                            <img src="assets/img/project1.jpg" alt="" class="modal__img">
+        
+                            <h3 class="modal__title">Веб-сайт</h3>
+                            <p class="modal__description">
+                                Лекарственные средства Герветин
+                            </p>
+        
+                            <ul class="tools">
+                                <li class="tools__item">Tilda</li>
+                                <li class="tools__item">HTML</li>
+                                <li class="tools__item">CSS</li>
+                                <li class="tools__item">JS</li>
+                                <li class="tools__item">Figma</li>
+                                <li class="tools__item">PhotoShop</li>
+                            </ul>
+                            <a href="https://gervetin.kz/" target="_blank" class="modal__button modal__button-width">
+                                Открыть страницу
+                            </a>
+                        </article>
+    
+                        <article class="modal__content" id="modal__content_2">
+                            <div class="modal__close close-modal" title="Close">
+                                <i class="ri-close-fill"></i>
+                            </div>
+        
+                            <img src="assets/img/project2.jpg" alt="" class="modal__img">
+        
+                            <h3 class="modal__title">Сайт-визитка</h3>
+                            <p class="modal__description">Дистрибьюторская компания Neo Life</p>
+                            <ul class="tools">
+                                <li class="tools__item">Tilda</li>
+                                <li class="tools__item">Figma</li>
+                                <li class="tools__item">PhotoShop</li>
+                                <li class="tools__item">Illustrator</li>
+                            </ul>
+                            <a href="https://gervetin.kz/" target="_blank" class="modal__button modal__button-width">
+                                Открыть страницу
+                            </a>
+                        </article>
+    
+                        <article class="modal__content"id="modal__content_3">
+                            <div class="modal__close close-modal" title="Close">
+                                <i class="ri-close-fill"></i>
+                            </div>
+        
+                            <img src="assets/img/project3.jpg" alt="" class="modal__img">
+        
+                            <h3 class="modal__title">Верстка</h3>
+                            <p class="modal__description">Главная страница туристического сайта</p>
+                            <ul class="tools">
+                                <li class="tools__item">HTML</li>
+                                <li class="tools__item">CSS</li>
+                                <li class="tools__item">CSS Grid</li>
+                                <li class="tools__item">JS скрипты (селект, календарь, инпут с подсказками)</li>
+                                <li class="tools__item">Figma</li>
+                            </ul>
+                            <a href="https://gervetin.kz/" target="_blank" class="modal__button modal__button-width">
+                                Открыть страницу
+                            </a>
+                        </article>
+    
+                        <article class="modal__content" id="modal__content_4">
+                            <div class="modal__close close-modal" title="Close">
+                                <i class="ri-close-fill"></i>
+                            </div>
+        
+                            <img src="assets/img/project4.jpg" alt="" class="modal__img">
+        
+                            <h3 class="modal__title">Сайт компании</h3>
+                            <p class="modal__description">
+                                Фарм. компания SPEY.
+                                </br>
+                                Адаптировать сайт международной компании SPEY для Казахстана и Казахстанских товаров.
+                            </p>
+                            <ul class="tools">
+                                <li class="tools__item">Платформа компаний</li>
+                                <li class="tools__item">Git</li>
+                            </ul>
+                            <a href="https://gervetin.kz/" target="_blank" class="modal__button modal__button-width">
+                                Открыть страницу
+                            </a>
+                        </article>
+    
+                        <article class="modal__content" id="modal__content_5">
+                            <div class="modal__close close-modal" title="Close">
+                                <i class="ri-close-fill"></i>
+                            </div>
+        
+                            <img src="assets/img/project5.jpg" alt="" class="modal__img">
+        
+                            <h3 class="modal__title">Верстка</h3>
+                            <p class="modal__description">Аренда премиальных автомобилей</p>
+                            <ul class="tools">
+                                <li class="tools__item">HTML</li>
+                                <li class="tools__item">CSS</li>
+                                <li class="tools__item">Type script(Base)</li>
+                                <li class="tools__item">Angular(Base)</li>
+                                <li class="tools__item">Figma</li>
+                            </ul>
+                            <a href="https://gervetin.kz/" target="_blank" class="modal__button modal__button-width">
+                                Открыть страницу
+                            </a>
+                        </article>
+                    </div>
+                        
+                </div>
+                
+                
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <!--=============== Frontend Developer ===============-->
+                    <div class="skills__area">
+                        <h3 class="skills__title">Frontend Developer</h3>
+                        <div class="skills__box">
+
+                            <!--=============== skills__group HTML CSS JS===============-->
+
+                            <div class="skills__group">
+                                <!-- HTML -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">HTML</h3>
+                                    
+                                </div>
+                                <!-- CSS -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">CSS</h3>
+                                </div>
+                                <!-- JS -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                </div>
+                                <!-- JS -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">Tilda</h3>
+                                </div>
+                            </div>
+                            <!--=============== skills__group React Bootstrap Git===============-->
+
+                            <div class="skills__group">
+                                <!-- React -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">React</h3>
+                                </div>
+                                <!-- Bootstrap -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                </div>
+                                <!-- Git -->
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">Git & GitHub</h3>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h3 class="skills__name">Figma</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=============== Backend Developer ===============-->
+                    <!-- <div class="skills__area">
+                        <h3 class="skills__title">Backend Developer</h3>
+
+                        <div class="skills__box">
+                             
+                            <div class="skills__group">
+                             
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Advanced</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+                            <div class="skills__group">
+                      
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div> -->
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <div class="footer__copy">
+            <div class="footer__logo">
+                <img src="assets/img/logo-purple.svg" alt="">
+            </div>
+            <span>
+                &#169; Ai_Aisara. All rigths reserved
+            </span>
+        </div>
+        
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
